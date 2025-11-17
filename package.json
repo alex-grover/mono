@@ -3,15 +3,44 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "check-types": "turbo run check-types",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "lint": "turbo run lint"
+  },
+  "dependencies": {
+    "@eslint/js": "latest",
+    "@next/eslint-plugin-next": "latest",
+    "@repo/eslint-config": "latest",
+    "@repo/ui": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-only-warn": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-turbo": "latest",
+    "globals": "latest",
+    "jiti": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "16.0.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest",
+    "typescript-eslint": "latest"
   },
   "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "19.2.5",
+    "@types/react-dom": "19.2.3",
+    "postcss": "^8.5",
     "prettier": "^3.6.2",
+    "tailwindcss": "4.1.17",
     "turbo": "^2.6.1",
-    "typescript": "5.9.2"
+    "typescript": "^5"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
